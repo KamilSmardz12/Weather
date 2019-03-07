@@ -4,6 +4,6 @@
     <meta charset="utf-8">
 </head>
 <body>
-<jsp:include page="displayWether.html"/>
+<jsp:include page="displayWeather.html"/>
 </body>
 </html>

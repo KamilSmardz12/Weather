@@ -14,8 +14,15 @@ public class DisplayWeather extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/Home");
+
+        String city = request.getParameter("city");
+        String country = request.getParameter("country");
+        request.setAttribute("city", city);
+        request.setAttribute("country", country);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("wd.jsp");
         dispatcher.forward(request,response);
+
 
     }
 }

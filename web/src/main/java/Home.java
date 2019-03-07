@@ -14,9 +14,8 @@ public class Home extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-//        String country = request.getParameter("country");
-//        String city = request.getParameter("city");
-//        response.sendRedirect("/DisplayWeather");
+
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
         dispatcher.forward(request,response);
 

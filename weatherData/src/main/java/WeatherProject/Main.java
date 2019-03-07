@@ -13,6 +13,7 @@ public class Main {
         WeatherData data;
         try
         {
+            assert service != null;
             data = service.getWeatherData(new Location("Kraków", "PL"));
             System.out.println("Temperatura w Krakowie: " + data.getTemperature().getValue());
 
